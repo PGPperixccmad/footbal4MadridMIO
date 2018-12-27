@@ -1,0 +1,31 @@
+{
+  "name": "football4madridMIO",
+  "version": "0.0.1",
+  "description": "Goals from foosball used in cloud app",
+  "dependencies": {
+    "@cloudant/cloudant": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "cfenv": "*",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^1.0.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "getmac": "^1.4.6",
+    "mqtt": "^2.18.8",
+    "mqtt-packet": "^6.0.0",
+    "nano": "^7.1.1",
+    "npm": "*",
+    "properties": "^1.2.1",
+    "socket.io": "^2.2.0",
+    "twit": "^2.2.11",
+    "underscore": "^1.9.1",
+    "websocket-multiplex": "^0.1.0"
+  },
+  "engines": {
+    "node": "0.10.32"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+
+        <% include ../partials/head %>
+        <!-- Use Jquery     -->     <script src="https://code.jquery.com/jquery-latest.js"></script>
+          <link href='https://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <% include ../partials/header %>
+        <main style="background-color:#F2F4F8">
+        <div class ="league_header_login">
+        </div>
+                    <!-- AJS Code -->
+        <div class ="row goalscreen" style="background-color:white;border: 1px solid #eaeef1;margin-top:0px;padding-top:15px;">
+            <div class="container">
+                        <!-- Container -->
+                                <!-- Player 1 -->
+                                <div class="col-xs-3 col-md-3 player" style="padding-left:0px;">
+                                    <!--div id="playerred" class = "well">
+                                        <h3 id="namered" style="padding-top:0px; margin-top:0px;">Player A </h3>
+                                        <i id='iconred' class="fa fa-user-secret fa-5x"></i>
+                                        <img id="imagered"  style="width:140px;height:140px;" /-->
+                                    <div id="playerred">
+                                        <!--h3 id="namered" style="padding-top:0px; margin-top:0px;">#UDCCMAD </h3-->
+                                        <img src="../images/escudoA.jpg"  style="width:270px;height:270px;" />
+                                        <h3 style="padding-top:0px; margin-top:0px;" class="text-center">#UDCCMAD</h3>
+                                        <h3 class="wkval header text-center"><span id="wkblue"></span></h3>
+                                        <h5 class="wkval subheader text-center">Chance Of Winning</h5>
+                                    </div>
+                                </div>
+                                <!-- Score -->
+                                <div class="col-xs-6 col-md-6">
+
+                                    <div class="well" id="spielstand">
+                                            <h1 id="gamescoredisplay" style="text-align: center;margin-top:0px;margin-bottom:0px;">
+                                                <span id="goal_red">-</span> : <span id="goal_blue">-</span>
+                                            </h1>
+                                    </div>
+                                </div>
+                                <!-- Player 2 -->
+                                <div class="col-xs-3 col-md-3 player" style="padding-right:0px;">
+                                    <!--div id="playerblue" class = "well">
+                                        <h3 id="nameblue" style="padding-top:0px; margin-top:0px;">Player B</h3>
+                                         <i id='iconblue' class="fa fa-user-secret fa-5x"></i>
+                                        <img id="imageblue"  style="width:140px;height:140px;" /-->
+                                    <div id="playerblue">
+                                        <!--h3 id="nameblue" style="padding-top:0px; margin-top:0px;">#FCMAD</h3-->
+                                        <img src="../images/escudoB.jpg"  style="width:270px;height:270px;" />
+                                        <h3 style="padding-top:0px; margin-top:0px;" class="text-center">#FCMAD</h3>
+                                        <h3 class="wkval header text-center"><span id="wkblue"></span></h3>
+                                        <h5 class="wkval subheader text-center">Chance Of Winning</h5>
+                                    </div>
+                                </div>
+                    </div>
+            </div>
+
+            </div>
+
+
+            <div class="container">
+                <div class="page-header timeheader text-center">
+                    <h1 id="timeline"><b>Football 4.0</b> Live!</h1>
+                </div>
+            <ul class="timeline">
+                </li>
+            </ul>
+            </div>
+    </main>
+    <footer>
+         <% include ../partials/footer %>
+        <!-- Load Script -->
+         <script type="text/javascript" src='/scripts/liveticker.js'></script>
+    </footer>
+
+    </body>
+</html>

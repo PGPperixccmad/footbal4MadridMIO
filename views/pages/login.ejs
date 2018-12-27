@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+        
+        <% include ../partials/head %>
+        <!-- Use Jquery     -->     <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <!-- Use LinkedIn  -->      <script type="text/javascript" src="//platform.linkedin.com/in.js">
+                                        api_key:   77qwywrn3ap4t2
+                                        onLoad:    onLinkedInLoad
+                                        lang:      en_US
+                                    </script> 
+          <link href='https://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>    
+    </head>
+        
+    <body>
+        <% include ../partials/header %>
+        <main style="background-color:#F2F4F8">
+        <div class ="league_header_login">
+        </div>      
+                    <!-- AJS Code -->
+        <div class ="row goalscreen" style="background-color:white;border: 1px solid #eaeef1;margin-top:0px;padding-top:15px;">
+            <div class="container">
+                        <!-- Container -->
+                                <!-- Player 1 -->
+                                <div class="col-md-3 player" style="padding-left:0px;">
+                                    <div id="playerred" class = "well">
+                                        <h3 id="namered" style="padding-top:0px; margin-top:0px;">Player A </h3>
+                                        <i id='iconred' class="fa fa-user-secret fa-5x"></i>
+                                        <img id="imagered"  style="width:140px;height:140px;" />
+                                        <a id="LoginButtonRed" class="btn btn-block btn-social btn-linkedin">
+                                            <i class="fa fa-linkedin"></i> Login
+                                        </a>
+                                        <h3 class="wkval header text-center"><span id="wkred"> 0</span></h3>
+                                        <h5 class="wkval subheader text-center">Chance Of Winning</h5>
+                                    </div>
+                                </div>
+                                <!-- Score -->
+                                <div class="col-md-6">
+                                
+                                    <div class="well" id="spielstand">
+                                            <h1 id="gamescoredisplay" style="text-align: center;margin-top:0px;margin-bottom:0px;">
+                                                <span id="goal_red">-</span> : <span id="goal_blue">-</span> 
+                                            </h1>
+                                    </div>
+                                </div>
+                                <!-- Player 2 -->
+                                <div class="col-md-3 player" style="padding-right:0px;">
+                                    <div id="playerblue" class = "well">
+                                        <h3 id="nameblue" style="padding-top:0px; margin-top:0px;">Player B</h3>
+                                         <i id='iconblue' class="fa fa-user-secret fa-5x"></i>
+                                        <img id="imageblue"  style="width:140px;height:140px;" />
+                                        <a id="LoginButtonBlue" class="btn btn-block btn-social btn-linkedin"> 
+                                            <i class="fa fa-linkedin"></i> Login
+                                        </a>
+                                         <h3 class="wkval header text-center"><span id="wkblue"> 0</span></h3>
+                                        <h5 class="wkval subheader text-center">Chance Of Winning</h5>
+                                    </div>
+                                </div>
+                    </div>
+            </div>
+                    <div id="buttonbg" class = "row">
+                <div class="container" style="padding-top: 15px">
+                    <button id="startGame" class="dark" role="button" >START GAME</button>
+                    <button id="switchSides" class="dark"  role="button" >REMATCH </button>
+                    <button  id="endGame" class="dark"  role="button"> RESET</button>
+                </div>       
+        </div> 
+            </div>
+
+                
+            <div class="container"> 
+                <!--- hier beginnt der Spaß -->
+                <div class="page-header timeheader text-center">
+        <h1 id="timeline"><b>Football 4.0</b> Live!</h1>
+    </div>
+    <ul class="timeline">            
+        </li>
+    </ul>
+                <!-- hier endet er -->
+                
+                 <!--- 
+                
+                <h3>Live! - Liveticker</h3>
+                <div  id="ticker">
+                    <div class="well">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <p><i class="fa fa-sun-o"></i> Das nächste Spiel ist immer das Schwerste! Die Massen sind begeistert. Fantastische Stimmung in der IBM-Fußballarena in Ehningen! Gleich ist Anpfiff. <br><b>Ein neues Spiel kann begonnen werden</b></br></p>
+                    </div>                      
+                </div>
+    </div> 
+    <!--- --->
+        
+        
+        
+        
+    <!--### Winner Popup Modal ###-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"> WINNER!</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-4 modal_playerwin"><img class ="center-block" src="https://media.licdn.com/mpr/mprx/0_0PWNobBi3S9majPGmvNAZ_661TUmagjb0vvPxMRL38caalrCDsNtsUbQ8C9bWjjG09NPuD6i1cBw2ujkI44RjyQLkcBI2u33D44nebs5AD6G2RKeDyHBmkSbl4"/></div>
+               <div class="col-sm-8 winnerplayer"><h1>Player has won.</h1></div>  
+                <!--
+              <div class="col-sm-4 modalscore"><span id="finalgoalscore">3 : 0</span></div>
+              <div class="col-sm-4 modal_playerlose"><img class ="center-block" src="https://media.licdn.com/mpr/mprx/0_0PWNobBi3S9majPGmvNAZ_661TUmagjb0vvPxMRL38caalrCDsNtsUbQ8C9bWjjG09NPuD6i1cBw2ujkI44RjyQLkcBI2u33D44nebs5AD6G2RKeDyHBmkSbl4"/</div> -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" id="rematch" class="btn btn-primary">Rematch</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--### End Winner Popup Modal ###-->
+    
+    
+    </main>
+    <footer>
+         <% include ../partials/footer %>
+        <!-- Load Script -->
+         <script type="text/javascript" src='/scripts/script.js'></script>  
+    </footer>
+
+    </body>
+</html>

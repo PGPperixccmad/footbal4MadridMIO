@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<% include ../partials/head %>        
+    <!-- Use Jquery     -->         
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Use LinkedIn  -->      
+    <script type="text/javascript" src="//platform.linkedin.com/in.js">
+        api_key:   772dl3xw3amb4s
+        onLoad:    onLinkedInLoad
+        lang:      en_US
+    </script> 
+    
+    <script type="text/javascript" src='/socket.io/socket.io.js'></script>
+        
+    <!-- Use Dojo + CometD  -->      
+    <script type="text/javascript" src="js/dojo/dojo.js"
+        data-dojo-config="async: true, paths: { 
+            'dojox/cometd': '../cometd-dojo/cometd' , 
+            'org/cometd': '../cometd-dojo/org/cometd' 
+        }"></script>
+<link rel="stylesheet" href="js/bluemix_g/css/gamebar.css">
+<link href="/stylesheets/dataTables.bootstrap.css" rel="stylesheet datatable">        
+        <script type="text/javascript" src='/js/flot/jquery.flot.min.js'></script>
+        <script type="text/javascript" src='/js/flot/jquery.flot.time.min.js'></script>
+        
+        
+  </head>
+        
+<body>
+     <% include ../partials/header %>
+               <main>
+        <div class="container">
+            <div class="jumbotron">          
+                Hello World
+                <a id="LoginButtonRed" class="btn btn-block btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> Login
+                </a>
+                
+                
+                <div id="graph" style="width:600px;height:300px"></div>
+                
+                
+                
+               <div id="gamebar">
+                
+                <script type="text/javascript">                             
+                
+                
+                </script>
+                
+                
+                </div>
+                <h3>Your Foosball Nemesis - These people win more than they lose against you.</h3>
+                <table class="table nemesis">
+                    <thead id="headings">
+                        <tr>
+                          <th id="photo">Photo</th>
+                          <th id="name">Name</th>
+                          <th id="NemesisRatio">Nemesis Ratio (Defeats - Wins )</th>
+                        </tr>
+                    </thead>
+                     <tbody id="results">
+                      </tbody>
+                </table>
+                    
+                
+            </div>
+        </div>
+    </main>
+    <!-- Use Socket -->
+    
+            <script type="text/javascript" src='/scripts/dashboard.js'></script>
+            <!-- DataTables -->
+            <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+            <!-- load bootstrap integration script -->
+            <script type="text/javascript" src='/scripts/dataTables.bootstrap.js'></script> 
+    </body>
+</html>

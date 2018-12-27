@@ -1,0 +1,195 @@
+body {
+  background-color: #67758d;
+  font-family: Roboto;
+}
+
+h3 {
+  color: white;
+  font-size: 15px;
+}
+
+
+h4 {
+  font-style: none;
+  font-size: 20px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+
+/*Navigationbar*/
+#silasnavbar
+{
+  display: inline;
+  text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    color: white;
+    float: right;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #67758d;
+}
+
+#silasleft{
+  float:left;
+  vertical-align: left;
+}
+
+
+
+
+/*Container*/
+#silascontainerindex
+{
+   position: absolute;
+   color: white;
+   left:0;
+   width: 100%;
+   height:95%;
+   margin-bottom: 2%;
+}
+#silasinnercontainerindex
+{
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  vertical-align: center;
+}
+#silasmoreinnercontainer
+{
+  margin-top: 30%;
+}
+
+
+
+
+/*Player*/
+
+table
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr
+{
+  text-align: center;
+}
+
+h1
+{
+  margin-top: 0;
+  width: 100%;
+  background-color: #67758d;
+  font-size: 17px;
+}
+
+h4
+{
+  color: white;
+
+}
+
+#silasplayer1
+{
+  width:300px;
+  height:300px;
+  background-color: #d0edff;
+  text-align: center;
+  vertical-align: center;
+  border-style: solid;
+  border-color: #67758d;
+  border-radius: 10px;
+  border-width: 8px;
+}
+
+#silasplayer2
+{
+  width:300px;
+  height:300px;
+  background-color: #d0edff;
+  text-align: center;
+  vertical-align: center;
+  border-style: solid;
+  border-color: #67758d;
+  border-radius: 10px;
+  border-width: 8px;
+}
+
+#silascircle
+{
+  margin-right: auto;
+  margin-left: auto;
+  height: 66px;
+  width: 66px;
+  background-color: #8dc3e6;
+  border-radius: 300px;
+}
+
+#silastest1 {
+    padding-top: 30%; 
+}
+
+#silastest2 {
+    padding-top: 30%; 
+}
+
+#text1
+{
+  display:none;}
+
+#text2
+{
+  display:none;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+#silasimg1 {
+  margin-top: -12px;
+  background-color: none; 
+  width: 100%;
+  height: 94%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#silasimg2 {
+  margin-top: -12px;
+  background-color: none; 
+  width: 100%;
+  height: 94%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

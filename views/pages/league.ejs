@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<% include ../partials/head %> 
+<link href="/stylesheets/dataTables.bootstrap.css" rel="stylesheet datatable">   
+  </head>
+<body>
+
+     <% include ../partials/header %>
+           <main>
+        <div class ="league_header">
+        <div class="container">
+        <h1>GLOBAL WALL OF FAME</h1>    
+            <div class="container" id="index">
+             GP = Goals Played | W = Wins | L = Losses | GF:GA = Goals For : Goals Against | GD = Goal Difference | PTS = Points || Win = +3 Points | Loss = -2 Points
+            </div>
+        </div>
+        </div>    
+        <div class="container">
+           
+          
+   
+                  <div class="table-responsive-fluid">
+                    <table id="testliga" class="table table-striped liga" id="table_id">
+                      <thead>
+                        <tr>
+                            <th id ="left">Photo</th>
+                            <th id ="left">User</th>
+                            <th id ="left">Company</th>
+                            <div id = "space"></div>
+                            <th>GP</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>GF:GA</th>
+                            <th>GD</th>
+                            <th>PTS</th>
+                        </tr>
+                      </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                  </div>
+                
+                
+                
+
+        </div>
+    </main>
+        <footer>
+        <% include ../partials/footer %>
+        <!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+                <!-- load bootstrap integration script -->
+        <script type="text/javascript" src='/scripts/dataTables.bootstrap.js'></script>       
+            
+        <!-- Load Show league script -->
+        <script type="text/javascript" src='/scripts/showLeague.js'></script>   
+    </footer>
+    
+    </body>
+</html>

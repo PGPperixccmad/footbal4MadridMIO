@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<% include ../partials/head %> 
+        <link href="/stylesheets/dataTables.bootstrap.css" rel="stylesheet datatable">   
+  </head>
+        
+     <% include ../partials/header %>
+           <main>
+        <div class ="league_header">
+        <div class="container">
+        <h1>BUSINESS UNIT CHALLENGE</h1>    
+        </div>
+        </div>    
+        <div class="container">
+          
+   
+                  <div class="table-responsive-fluid">
+                    <table id="BULiga" class="table table-striped liga" id="table_id">
+                      <thead>
+                        <tr>
+                            <th id ="left">Business Unit</th>
+                            <th>Games Played</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Goals For : Goals Against</th>
+                            <th>Goal Difference</th>
+                            <th>Points</th>
+                        </tr>
+                      </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                  </div>
+                
+                
+                
+
+        </div>
+    </main>
+        <footer>
+            <% include ../partials/footer %>
+        <!-- DataTables -->
+            <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+                <!-- load bootstrap integration script -->
+            <script type="text/javascript" src='/scripts/dataTables.bootstrap.js'></script>       
+            
+            <!-- Load Show league script -->
+            <script type="text/javascript" src='/scripts/showLeagueBU.js'></script>   
+    </footer>
+    
+    </body>
+</html>

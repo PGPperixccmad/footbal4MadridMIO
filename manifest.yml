@@ -1,0 +1,10 @@
+applications:
+- services:
+  - Cloudant NoSQL DB-FootballMIO
+  - IoT_allMIO
+  host: football4madridMIO
+  name: football4madridMIO
+  path: .
+  domain: eu-de.mybluemix.net
+  instances: 1
+  memory: 512M

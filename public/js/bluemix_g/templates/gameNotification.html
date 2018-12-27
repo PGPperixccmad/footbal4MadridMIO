@@ -1,0 +1,15 @@
+<div class='bpmg_stat-notification-instance' dojoAttachEvent='onmouseover:_doMouseOver, onmouseout:_doMouseOut' id="${id}">
+	<div class = 'bpmg_stat-notification-window' dojoAttachPoint ='window'>
+		<div class='bpmg_stat-notification-close' dojoAttachPoint='closeIcon' dojoAttachEvent='onmouseover:_doIconMouseOver,onmouseout:_doIconMouseOut,onclick:_doIconClick'>&times;</div>
+		<table>
+			<tr>
+				<td class='bpmg_stat-notification-icon-align'>
+					<div class='bpmg_stat-notification-icon' dojoAttachPoint='icon'></div>
+				</td>
+				<td>
+					<div class='bpmg_stat-notification-message' dojoAttachPoint='message'>${message}</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
